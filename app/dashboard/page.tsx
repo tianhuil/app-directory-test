@@ -1,15 +1,18 @@
-import { Stack, Title } from '@mantine/core';
+import { Stack } from '@mantine/core';
+import { TodoComp, type Todo } from './todo';
 
-const getData = () => ['abc', 'def', 'ghi'];
+const getTodo = (): Todo[] => [
+  { id: 1, text: 'First todo' },
+  { id: 2, text: 'Second todo' },
+  { id: 3, text: 'Third todo' },
+];
 
 const DashboardPage = () => {
-  const data = getData();
+  const todo = getTodo();
   return (
     <Stack>
-      {data.map((item) => (
-        <Title key={item} order={2}>
-          {item}
-        </Title>
+      {todo.map(({ id, text }) => (
+        <TodoComp key={id} id={id} text={text} />
       ))}
     </Stack>
   );
