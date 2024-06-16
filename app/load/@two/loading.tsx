@@ -1,8 +1,11 @@
-import { Loader, Paper, Text } from '@mantine/core';
+import { Group, Loader, Text } from '@mantine/core';
+import { PaperCard } from '../common';
 
 export default () => (
-  <Paper>
-    <Loader />
-    <Text>Two Loading</Text>
-  </Paper>
+  <PaperCard>
+    <Group>
+      <Loader />
+      <Text>Two Loading</Text>
+    </Group>
+  </PaperCard>
 );

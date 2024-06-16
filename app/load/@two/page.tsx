@@ -1,15 +1,11 @@
-import { Paper, Text } from '@mantine/core';
-
-const delay = (ms: number) =>
-  new Promise((res) => {
-    setTimeout(res, ms);
-  });
+import { Text } from '@mantine/core';
+import { delay, PaperCard } from '../common';
 
 export default async () => {
   await delay(2000);
   return (
-    <Paper shadow="md" m="lg">
+    <PaperCard>
       <Text>Two Loaded</Text>
-    </Paper>
+    </PaperCard>
   );
 };

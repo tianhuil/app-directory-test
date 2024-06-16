@@ -1,4 +1,5 @@
-import { Paper, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
+import { PaperCard } from './common';
 
 const delay = (ms: number) =>
   new Promise((res) => {
@@ -8,8 +9,8 @@ const delay = (ms: number) =>
 export default async () => {
   await delay(1);
   return (
-    <Paper shadow="md" m="lg">
+    <PaperCard>
       <Text>Page</Text>
-    </Paper>
+    </PaperCard>
   );
 };
