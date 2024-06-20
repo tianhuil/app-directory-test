@@ -1,7 +1,7 @@
 'use client';
 
 import { Button, Flex, Title } from '@mantine/core';
-import { removeTodo } from '../actions/todos';
+import { removeTodo } from './todos';
 
 export interface Todo {
   id: number;
