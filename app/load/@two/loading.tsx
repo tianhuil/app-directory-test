@@ -1,5 +1,5 @@
 import { Group, Loader, Text } from '@mantine/core';
-import { PaperCard } from '../common';
+import { PaperCard } from '../../common';
 
 export default () => (
   <PaperCard>

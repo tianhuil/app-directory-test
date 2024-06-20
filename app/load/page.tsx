@@ -1,5 +1,5 @@
 import { Text } from '@mantine/core';
-import { PaperCard } from './common';
+import { PaperCard } from '../common';
 
 const delay = (ms: number) =>
   new Promise((res) => {

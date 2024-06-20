@@ -1,5 +1,5 @@
 import { Text } from '@mantine/core';
-import { delay, PaperCard } from '../common';
+import { delay, PaperCard } from '../../common';
 
 export default async () => {
   await delay(2000);
